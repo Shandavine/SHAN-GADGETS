@@ -2,205 +2,223 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> SHAN Gadgets</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHAN Gadgets</title>
 
-        .container {
-            margin-top: 50px;
-        }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
-        .product-card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            background: #f8f9fa;
-            margin-bottom: 20px;
-        }
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-        .btn-buy {
-            background-color: #28a745;
-            color: white;
-        }
+    .container {
+      margin-top: 50px;
+    }
 
-        .btn-view {
-            background-color: #007bff;
-            color: white;
-        }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      background: #f8f9fa;
+      margin-bottom: 20px;
+    }
 
-        .navbar {
-            background-color: #064635 !important;
-        }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
 
-        .navbar-brand,
-        .navbar-nav .nav-link {
-            color: black !important;
-            transition: color 0.3s ease-in-out;
-        }
+    .btn-buy {
+      background-color: #28a745;
+      color: white;
+    }
 
-        .navbar-nav .nav-link:hover {
-            color: blue !important;
-        }
+    .btn-view {
+      background-color: #007bff;
+      color: white;
+    }
 
-        .hidden {
-            display: none;
-        }
+    .navbar {
+      background-color: #064635 !important;
+      height: 100px;
+    }
 
-        /* Navbar hover effect */
-        .navbar-nav .nav-link:hover {
-            color: navy !important;
-        }
-    </style>
+    .navbar-brand img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: navy !important;
+    }
+
+    .social-icons a {
+      color: white;
+      margin-left: 15px;
+      font-size: 1.5rem;
+    }
+
+    .social-icons a:hover {
+      color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .navbar .social-icons {
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body class="p-3 mb-2 bg-success-subtle text-success-emphasis">
 
-<!-- Navbar with background and logo inside -->
-<nav class="navbar navbar-dark" style="background-color: #064635; height: 100px;">
-    <div class="container d-flex align-items-center" style="height: 100%;">
-      <a class="navbar-brand mb-0" href="#">
-        <img src="gadtes logo.png" alt="InnoWave Gadgets Logo" height="80" class="rounded-circle">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!-- Logo (left) -->
+      <a class="navbar-brand" href="#">
+        <img src="gadtes logo.png" alt="InnoWave Gadgets Logo">
       </a>
+
+      <!-- Social Icons (right) -->
+      <div class="social-icons d-flex align-items-center">
+        <a href="https://wa.me/254717404746" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://tiktok.com/@shan_chemu" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://facebook.com/Techylover" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      </div>
     </div>
   </nav>
-  
-  
 
+  <!-- Home Section -->
+  <section id="home" class="container text-center mt-5">
+    <h1 style="color: #007bff;">CHECK OUT ON OUR GADGETS</h1>
+    <p style="font-style: italic; color: midnightblue;">We are located along K Road, Spurmall, Room T03, Fourth Floor for those who want to visit</p>
+    <p style="font-style: italic; color: midnightblue;">We operate 24/7 and we do free delivery countrywide</p>
+  </section>
 
+  <!-- Products Section -->
+  <section id="products" class="container">
+    <h2 class="text-center mt-4">Our Latest Gadgets</h2>
+    <div class="row mt-4">
 
-    <!-- Home Section -->
-    <section id="home" class="container text-center mt-5">
-        <h1 style="color: #007bff;"> CHECK OUT ON OUR GADGETS</h1>
-        <p style="font-style: italic; color: midnightblue;">We are located along K Road, Spurmall, Room T03, Fourth
-            Floor for thoise who wants to visit</p>
-        <p style="font-style: italic; color: midnightblue;" s>We operate 24/7 and we do free delivery countrywide </p>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="container">
-        <h2 class="text-center mt-4">Our Latest Gadgets</h2>
-        <div class="row mt-4">
-            <!-- Product 1 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="smartphone.png" alt="Smartphone" />
-                    <h4>Smartphone X</h4>
-                    <p><strong>Price:</strong> $699</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="smartphone.png" download="smartphone.png" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="laptop.jpg" alt="Laptop" />
-                    <h4>Ultra Laptop Pro</h4>
-                    <p><strong>Price:</strong> $1,299</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="laptop.jpg" download="laptop.jpg" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="headphones.jpg" alt="Headphones" />
-                    <h4>Wireless Headphones</h4>
-                    <p><strong>Price:</strong> $199</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="headphones.jpg" download="headphones.jpg" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="Tablet.jpg" alt="Tablet" />
-                    <h4>Tablet Z10</h4>
-                    <p><strong>Price:</strong> $499</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="Tablet.jpg" download="Tablet.jpg" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="smartwatch.jpg" alt="Smartwatch" />
-                    <h4>Smartwatch S</h4>
-                    <p><strong>Price:</strong> $249</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="smartwatch.jpg" download="smartwatch.jpg" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="col-md-4">
-                <div class="product-card">
-                    <img src="gamepad.jpg" alt="Gaming Console" />
-                    <h4>NextGen Gaming Console</h4>
-                    <p><strong>Price:</strong> $499</p>
-                    <a href="#" class="btn btn-view">View</a>
-                    <a href="#" class="btn btn-buy">Buy Now</a>
-                    <a href="gamepad.jpg" download="gamepad.jpg" class="btn btn-secondary">Download Image</a>
-                </div>
-            </div>
+      <!-- Product 1 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="smartphone.png" alt="Smartphone" />
+          <h4>Smartphone X</h4>
+          <p><strong>Price:</strong> $699</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="smartphone.png" download="smartphone.png" class="btn btn-secondary">Download Image</a>
         </div>
-    </section>
+      </div>
 
-    <!-- Modal for image zoom -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-body text-center">
-                    <img id="modalImage" src="" alt="Product Image" class="img-fluid rounded" />
-                </div>
-            </div>
+      <!-- Product 2 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="laptop.jpg" alt="Laptop" />
+          <h4>Ultra Laptop Pro</h4>
+          <p><strong>Price:</strong> $1,299</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="laptop.jpg" download="laptop.jpg" class="btn btn-secondary">Download Image</a>
         </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="headphones.jpg" alt="Headphones" />
+          <h4>Wireless Headphones</h4>
+          <p><strong>Price:</strong> $199</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="headphones.jpg" download="headphones.jpg" class="btn btn-secondary">Download Image</a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="Tablet.jpg" alt="Tablet" />
+          <h4>Tablet Z10</h4>
+          <p><strong>Price:</strong> $499</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="Tablet.jpg" download="Tablet.jpg" class="btn btn-secondary">Download Image</a>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="smartwatch.jpg" alt="Smartwatch" />
+          <h4>Smartwatch S</h4>
+          <p><strong>Price:</strong> $249</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="smartwatch.jpg" download="smartwatch.jpg" class="btn btn-secondary">Download Image</a>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-md-4">
+        <div class="product-card">
+          <img src="gamepad.jpg" alt="Gaming Console" />
+          <h4>NextGen Gaming Console</h4>
+          <p><strong>Price:</strong> $499</p>
+          <a href="#" class="btn btn-view">View</a>
+          <a href="#" class="btn btn-buy">Buy Now</a>
+          <a href="gamepad.jpg" download="gamepad.jpg" class="btn btn-secondary">Download Image</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Bootstrap JS + Custom Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // View button functionality
-        document.querySelectorAll('.btn-view').forEach(button => {
-            button.addEventListener('click', function (event) {
-                event.preventDefault();
-                const productCard = this.closest('.product-card');
-                const imgSrc = productCard.querySelector('img').src;
-                document.getElementById('modalImage').src = imgSrc;
-                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-                modal.show();
-            });
-        });
+  <!-- Modal for image zoom -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <img id="modalImage" src="" alt="Product Image" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </div>
 
-        // Buy Now functionality
-        document.querySelectorAll('.btn-buy').forEach(button => {
-            button.addEventListener('click', function (event) {
-                event.preventDefault();
-                alert("Lipa na M-Pesa\nBuy Goods and Services\nTill Number: 505005");
-            });
-        });
-    </script>
+  <!-- Bootstrap JS + Custom Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // View button functionality
+    document.querySelectorAll('.btn-view').forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        const productCard = this.closest('.product-card');
+        const imgSrc = productCard.querySelector('img').src;
+        document.getElementById('modalImage').src = imgSrc;
+        const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+      });
+    });
+
+    // Buy Now functionality
+    document.querySelectorAll('.btn-buy').forEach(button => {
+      button.addEventListener('click', function (event) {
+        event.preventDefault();
+        alert("Lipa na M-Pesa\nBuy Goods and Services\nTill Number: 505005");
+      });
+    });
+  </script>
 </body>
 
 </html>
